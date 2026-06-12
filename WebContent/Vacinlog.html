@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #4CAF50;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    input[type="text"],
+    input[type="date"],
+    input[type="submit"] {
+      width: 90%;
+    }
+  }
+</style>
+
+</head>
+<body>
+ <div class="container">
+        <h1>Add Vaccine Log</h1>
+        <form action="AddVaccineLog" method="post">
+            <input type="text" name="cid" placeholder="Enter child id" required>
+            <br>
+            <input type="text" name="vname" placeholder="Enter vaccine name" required>
+            <br>
+            <input type="date" name="date" placeholder="Enter price of vaccine" required>
+            <br>
+            <input type="text" name="agemonths" placeholder="Enter child age in months" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <a href="Dashboard.html">Go Back</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manage Vaccine Prices</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            width: 100%;
+            padding: 10px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <a href="increase.jsp">Increase Vaccine Price</a>
+        <a href="decrease.jsp">Decrease Vaccine Price</a>
+    </div>
+</body>
+</html>

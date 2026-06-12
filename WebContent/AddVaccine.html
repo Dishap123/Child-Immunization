@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Vaccine</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #007BFF;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            width: 100%;
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Vaccine</h1>
+        <form action="AddVaccine" method="post">
+            <input type="text" name="vname" placeholder="Enter vaccine name" required>
+            <br>
+            <input type="text" name="vdetails" placeholder="Enter vaccine details" required>
+            <br>
+            <input type="text" name="vprice" placeholder="Enter price of vaccine" required>
+            <br>
+            <input type="text" name="months" placeholder="Enter month of taking vaccine" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <a href="Dashboard.html">Go Back</a>
+    </div>
+</body>
+</html>

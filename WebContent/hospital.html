@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hospital Login</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJvYXV0aCI6eyJjbGllbnRfaWQiOiJmcm9udGlmeS1maW5kZXIifSwicGF0aCI6ImloaC1oZWFsdGhjYXJlLWJlcmhhZFwvYWNjb3VudHNcL2MzXC80MDAwNjI0XC9wcm9qZWN0c1wvMjA5XC9hc3NldHNcL2ZkXC8zNzI3N1wvNjE1NTRlMGNjNGI5ZDFlNmI2M2RiZjVjMjkyMjFlOTAtMTY1ODI5ODk1Ny5qcGcifQ:ihh-healthcare-berhad:7iqcnf2ossvVI3mhzbETKegtzA9K2km38hAUOAhgjak?width=%7Bwidth%7D') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .container {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .card h1 {
+        margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #007BFF;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            width: 100%;
+            padding: 10px;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"] {
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Hospital</div>
+        <div class="card">
+            <h1>Login</h1>
+            <form action="LoginHospital" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required><br>
+                <input type="password" name="password" placeholder="Enter your password" required><br>
+                <input type="submit" value="Submit">
+            </form><br>
+        </div>
+    </div>
+</body>
+</html>

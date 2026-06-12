@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+            padding: 15px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .button {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .container {
+                width: 400px;
+            }
+
+            .button {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the dashboard</h1>
+        <a class="button" href="AddVaccine.html">Add Vaccine</a>
+        <a class="button" href="ViewAllVaccine.jsp">View All Vaccine</a>
+        <a class="button" href="UpdateVaccinePrice.html">Update Vaccine Price</a>
+        <a class="button" href="Search.jsp">Search</a>
+        <a class="button" href="RegisterUser.html">Add User</a>
+        <a class="button" href="ViewAllUser.jsp">View All Users</a>
+        <a class="button" href="Vacinlog.html">Vaccine Log</a>
+        <a class="button" href="ViewUpcomingVaccineAllChild.jsp">View Upcoming Vaccine for All Child</a>
+    </div>
+</body>
+</html>
