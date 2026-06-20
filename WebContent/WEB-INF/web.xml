@@ -13,7 +13,7 @@
     <description></description>
     <display-name>AddVaccine</display-name>
     <servlet-name>AddVaccine</servlet-name>
-    <servlet-class>com.devashish.services.AddVaccine</servlet-class>
+    <servlet-class>com.disha.services.AddVaccine</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddVaccine</servlet-name>
@@ -23,7 +23,7 @@
     <description></description>
     <display-name>LoginHospital</display-name>
     <servlet-name>LoginHospital</servlet-name>
-    <servlet-class>com.devashish.services.LoginHospital</servlet-class>
+    <servlet-class>com.disha.services.LoginHospital</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginHospital</servlet-name>
@@ -33,7 +33,7 @@
     <description></description>
     <display-name>RegisterUser</display-name>
     <servlet-name>RegisterUser</servlet-name>
-    <servlet-class>com.devashish.services.RegisterUser</servlet-class>
+    <servlet-class>com.disha.services.RegisterUser</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>RegisterUser</servlet-name>
@@ -43,7 +43,7 @@
     <description></description>
     <display-name>LoginUser</display-name>
     <servlet-name>LoginUser</servlet-name>
-    <servlet-class>com.devashish.services.LoginUser</servlet-class>
+    <servlet-class>com.disha.services.LoginUser</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginUser</servlet-name>
@@ -53,7 +53,7 @@
     <description></description>
     <display-name>AddVaccineLog</display-name>
     <servlet-name>AddVaccineLog</servlet-name>
-    <servlet-class>com.devashish.services.AddVaccineLog</servlet-class>
+    <servlet-class>com.disha.services.AddVaccineLog</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddVaccineLog</servlet-name>

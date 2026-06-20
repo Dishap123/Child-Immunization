@@ -9,10 +9,16 @@ public class ConnectDB
 		{
 			if(con==null)
 			{
-				Class.forName("com.mysql.jdbc.Driver");
+				// Compatible with both MySQL Connector/J 5 and 8
+				try {
+					Class.forName("com.mysql.cj.jdbc.Driver");
+				} catch (ClassNotFoundException cnfe) {
+					Class.forName("com.mysql.jdbc.Driver");
+				}
 				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/vaccine_db","root","");
 				System.out.println("Connection Established");
 			}
+
 			
 		}
 		catch(Exception e)
